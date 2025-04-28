@@ -30,8 +30,8 @@ let countdown;
 let timeLeft = 120; // دقيقتين (120 ثانية)
 
 function startGame() {
-    if (players.length < 4) {
-        alert("يجب أن يكون هناك 4 لاعبين على الأقل لبدء اللعبة.");
+    if (players.length < 2) {
+        alert("يجب أن يكون هناك 2 لاعبين على الأقل لبدء اللعبة.");
         return;
     }
 
