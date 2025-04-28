@@ -52,9 +52,9 @@ function assignRole() {
 }
 
 function updatePlayerCount() {
-    messages.innerHTML = `<p>عدد اللاعبين الحاليين: ${players.length} / 4</p>`;
-    if (players.length < 4) {
-        messages.innerHTML += `<p>ينبغي أن يكون عدد اللاعبين 4 على الأقل لبدء اللعبة.</p>`;
+    messages.innerHTML = `<p>عدد اللاعبين الحاليين: ${players.length} / 2</p>`;
+    if (players.length < 2) {
+        messages.innerHTML += `<p>ينبغي أن يكون عدد اللاعبين2على الأقل لبدء اللعبة.</p>`;
     }
 }
 
