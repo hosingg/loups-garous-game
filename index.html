@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة Loup Garou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>لعبة Loup Garou</h1>
+    
+    <div class="players">
+      <h2>اللاعبون</h2>
+      <ul id="playerList"></ul>
+      <input type="text" id="playerName" placeholder="أدخل اسم اللاعب">
+      <button onclick="addPlayer()">إضافة لاعب</button>
+    </div>
+
+    <div class="chat">
+      <h2>الدردشة</h2>
+      <div id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="اكتب رسالة...">
+      <button onclick="sendMessage()">إرسال</button>
+    </div>
+
+    <div class="vote">
+      <h2>التصويت</h2>
+      <button onclick="startVoting()">ابدأ التصويت</button>
+      <div id="voteArea"></div>
+    </div>
+
+    <div class="restart">
+      <button onclick="restartGame()">إعادة اللعب</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
