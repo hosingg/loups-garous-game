@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الذئب البشري</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>لعبة الذئب البشري</h1>
+
+        <div id="messages"></div>
+
+        <!-- إضافة واجهة الدردشة -->
+        <div id="chatBox" class="chat-box">
+            <h3>الدردشة</h3>
+            <div id="chatMessages" class="chat-messages"></div>
+            <input type="text" id="chatInput" placeholder="أكتب رسالتك هنا..." />
+            <button id="sendMessageBtn">إرسال</button>
+        </div>
+
+        <div id="playerRole"></div>
+        <div id="timerArea">
+            <p id="time">الوقت المتبقي: 2:00</p>
+        </div>
+
+        <div id="voteArea" class="hidden">
+            <label for="voteSelect">اختيار اللاعب للتصويت:</label>
+            <select id="voteSelect"></select>
+            <button id="submitVoteBtn">تصويت</button>
+        </div>
+
+        <div id="nightPhase" class="hidden">
+            <img id="nightImage" src="images/night.jpg" alt="الليل">
+        </div>
+
+        <div id="dayPhase" class="hidden">
+            <img id="dayImage" src="images/day.jpg" alt="النهار">
+        </div>
+
+        <div>
+            <button id="startGameBtn">ابدأ اللعبة</button>
+            <button id="startNightBtn" class="hidden">ابدأ الليل</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

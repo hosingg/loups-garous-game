@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#messages {
+    margin-bottom: 20px;
+}
+
+#playerRole {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#timerArea {
+    margin: 10px;
+}
+
+#voteArea {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+#nightImage, #dayImage {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* تصميم الدردشة */
+.chat-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#chatInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#sendMessageBtn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendMessageBtn:hover {
+    background-color: #0056b3;
+}
