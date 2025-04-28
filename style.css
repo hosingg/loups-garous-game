@@ -1,58 +1,111 @@
 body {
-  font-family: 'Tajawal', sans-serif;
-  background-color: #f0f0f0;
-  direction: rtl;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
 }
 
-h1, h2 {
-  color: #333;
-}
-
-input[type="text"] {
-  width: 70%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+h1 {
+    font-size: 32px;
+    color: #4caf50;
 }
 
 button {
-  padding: 10px 15px;
-  margin: 5px;
-  border: none;
-  border-radius: 8px;
-  background-color: #3498db;
-  color: white;
-  cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #2980b9;
+    background-color: #45a049;
 }
 
-#chatMessages {
-  height: 150px;
-  overflow-y: auto;
-  background: #eee;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
+button:disabled {
+    background-color: #ccc;
 }
 
-#voteArea button {
-  display: block;
-  margin: 5px auto;
-  background-color: #e74c3c;
+#timerArea {
+    margin-top: 20px;
+}
+
+#voteArea {
+    margin-top: 30px;
+}
+
+#voteArea.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f44336;
+}
+
+#messages {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#startNightBtn {
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#startNightBtn.hidden {
+    display: none;
+}
+
+#messages div {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+}
+
+#messages div span {
+    color: #00796b;
+    font-size: 16px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+button, #startNightBtn, #timerArea, #voteArea {
+    animation: slideIn 0.5s ease-out;
 }
